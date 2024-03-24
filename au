@@ -1,0 +1,27 @@
+#!/bin/sh
+
+if [ "$#" -ne 2 ]; then
+    echo "Usage: $0 <number1> <number2>"
+    exit 1
+fi
+
+num1=$1
+num2=$2
+
+
+sum=$((num1 + num2))
+
+echo "Сумма чисел $num1 и $num2 равна: $sum"
+
+if [ "$sum" -gt 0 ]; then
+    echo "больше нуля"
+elif [ "$sum" -lt 0 ]; then
+    echo "меньше нуля"
+else
+    echo "равен нулю"
+fi
+
+вывод: kakto:~# ./laba.sh 5 -3
+Сумма чисел 5 и -3 равна: 2
+больше нуля
+
