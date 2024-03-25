@@ -14,11 +14,11 @@ sum=$((num1 + num2))
 echo "Сумма чисел $num1 и $num2 равна: $sum"
 
 if [ "$sum" -gt 0 ]; then
-    echo "больше нуля"
+    echo "Больше нуля"
 elif [ "$sum" -lt 0 ]; then
-    echo "меньше нуля"
+    echo "Меньше нуля"
 else
-    echo "равен нулю"
+    echo "Равен нулю"
 fi
 
 вывод: kakto:~# ./laba.sh 5 -3
